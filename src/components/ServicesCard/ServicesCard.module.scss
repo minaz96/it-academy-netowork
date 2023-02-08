@@ -1,0 +1,30 @@
+.card {
+    width: 387px;
+    height: 347px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    
+    &_title {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 100%;
+        color: #2C2D2E;
+        margin-bottom: 16px;
+    }
+    &_description{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #2C2D2E; 
+    }
+    &_image{
+        width: 200px;
+        height: 200px;
+    }
+}

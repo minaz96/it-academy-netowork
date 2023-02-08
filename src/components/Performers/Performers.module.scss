@@ -1,0 +1,19 @@
+.Performers {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      color: #2C2D2E;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }  

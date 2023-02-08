@@ -1,0 +1,35 @@
+.service_block{
+    padding: 12px 16px;
+    display: inline-block;
+    margin-left: 10px;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    border-radius: 12px;
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #2C2D2E;
+}
+
+    .service_block_active{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px 16px;
+        gap: 10px;
+        height: 46px;
+        background: #EDEFFF;
+        border: 1px solid #465EFD;
+        border-radius: 12px;
+        margin-right: 16px;
+        cursor: pointer;
+        color: #465EFD;
+        .icon_block{
+            width: 6.55px;
+            height: 6.55px;
+            }
+        }

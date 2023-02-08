@@ -1,0 +1,26 @@
+.last_block{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    .heading{
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+      color: #2c2d2e;
+      margin-bottom: 20px;
+    }
+
+    .cards_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        background: #FFFFFF;
+        border-radius: 16px;
+}
+}
