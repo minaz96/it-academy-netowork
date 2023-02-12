@@ -36,9 +36,9 @@ const Service = () => {
 
                 <div className={s.hints}>
                     {
-                        dataHints.map(hints => {
+                        dataHints.map((hints, index) => {
                          return (
-                          <Hints>
+                          <Hints key={index}>
                           { hints.name }
                           </Hints>
                          )

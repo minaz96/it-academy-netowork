@@ -1,47 +1,28 @@
 import React, { useState } from "react";
-import ServiceBtn from "../ServiceBtn/ServiceBtn";
+// import ServiceBtn from "../ServiceBtn/ServiceBtn";
 import { services } from '../../constants/services';
 import s from "./CategoryService.module.scss";
 
+const tabs = ['Дизайн', 'Разработка IT', 'Тексты и копирайтинг', 'SEO', 'Обучение и консалтинг'];
+
 const CategoryService = () => {
-  const [stateService, setstateServie] = useState(false);
-  const [serviceBlocks, setServiceBlocks] = useState(
-    [
-        {
-            title: "Дизайн",
-            id: 1
-        },
-        {
-            title: "Разработка IT",
-            id: 2
-        },
-        {
-            title: "Тексты и копирайтинг",
-            id: 3
-        },
-        {
-            title: "SEO",
-            
-            id: 4
-        },
-        {
-            title: "Обучение и консалтинг",
-            id: 5
-        }
-
-    ])
-
+    const [activeTab, setActiveTab] = useState(null);
 
   return (
     <div className={s.CategoryService}>
       <h2>Категории услуг</h2>
 
       <div className={s.service_items}>
-        {
-            serviceBlocks.map((service)=> { 
-                return <ServiceBtn key = {service.id} serviceTitle = {service.title}/>
-            })
-        }
+      {tabs.map((item, index) => (
+                    <div
+                        key={index}
+                        className={activeTab === index ? s.active_tab : s.tab}
+                        onClick={() => {activeTab ===index ? setActiveTab(null) : setActiveTab(index)}}
+                    >
+                        {item}
+                        {activeTab === index && <span>x</span>}
+                    </div>
+                ))}
       </div>
 
       <div className={s.services__block}>
